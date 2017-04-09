@@ -54,6 +54,437 @@
       <div class="body-wrap">
   
     
+<article id="post-重载和重写" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h1><p><strong>定义</strong>同名不同参  </p>
+<ol>
+<li>方法名相同  </li>
+<li>参数不同（个数、顺序、类型）<br><strong>注</strong> 参数名 &amp; 返回值 与重载无关<br><strong>例</strong> <code>System.out.println();</code> <code>构造方法与实例方法</code><br><img src="http://i.imgur.com/SALla8Y.png" alt=""></li>
+</ol>
+<h2 id="返回值不同是否为重载？否"><a href="#返回值不同是否为重载？否" class="headerlink" title="返回值不同是否为重载？否"></a>返回值不同是否为重载？否</h2><ol>
+<li><strong>同名同参不同返回值</strong> 程序会报错<br><img src="http://i.imgur.com/3PpZx79.png" alt="同名同参报错"></li>
+<li><strong>同名不同参不同返回值</strong> 参数不同即为重载<br><img src="http://i.imgur.com/2QfgB4w.png" alt=""></li>
+</ol>
+<h2 id="自动售货机例子"><a href="#自动售货机例子" class="headerlink" title="自动售货机例子"></a>自动售货机例子</h2><ol>
+<li>新建一个自动收货机对象，有售卖的方法，有纸币和硬币两种类型。收钱方式有先收硬币，再收纸币；先收硬币，再收纸币，再收硬币。<br><img src="http://i.imgur.com/rUHxUvu.png" alt=""></li>
+<li>进行买操作。出口只有一个。<br><img src="http://i.imgur.com/DsKdiYG.png" alt=""></li>
+</ol>
+<h1 id="重写"><a href="#重写" class="headerlink" title="重写"></a>重写</h1><p><strong>定义</strong>同名同参同返回值  </p>
+<ol>
+<li>方法名相同  </li>
+<li>参数相同（个数、顺序、类型）  </li>
+<li><p>返回值相同<br><strong>注</strong> 子类重写父类<br>注意:   </p>
+<pre><code> (1)子类中不能重写父类中的final方法 (只能重写非私有方法)  
+ (2)子类中必须重写父类中的abstract方法   
+（3）访问修饰符的限制一定要大于被重写方法的访问修饰符（public&gt;protected&gt;default&gt;private）  
+（4）重写方法一定不能抛出新的检查异常或者比被重写方法申明更加宽泛的检查型异常   
+</code></pre><p>如：<br>父类的一个方法申明了一个检查异常IOException，在重写这个方法是就不能抛出Exception,只能抛出IOException的子类异常，可以抛出非检查异常。<br><strong>例</strong> </p>
+<p> @Override<br> public String toString() {</p>
+<pre><code>return super.toString();
+</code></pre><p> }<br>不覆盖toString方法的话，继承自Object类的toString方法格式 是  包名.类名@xxxx   </p>
+</li>
+</ol>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-张家界攻略" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="天门山（半天）好玩"><a href="#天门山（半天）好玩" class="headerlink" title="天门山（半天）好玩"></a>天门山（半天）好玩</h1><ul>
+<li>位置：火车站步行10min</li>
+<li>费用：258+3元（含索道）。淘宝预定228元</li>
+<li><p>景：</p>
+<ol>
+<li>天门山索道-世界上最长的高山客运索道（全长7455米，高差1277米）世界上最陡世界第二长《30分钟》</li>
+<li>天门洞-999级天梯</li>
+<li>鬼谷栈道（三条）</li>
+<li>盘山道-99弯</li>
+</ol>
+</li>
+<li><p>路线</p>
+<ol>
+<li>A线路汽车上山索道下山，B线路反之</li>
+<li>索道上山 - 走中线 - 西线 - 东线 - 天门洞<br><img src="http://i.imgur.com/rCX7I4o.png" alt=""><h1 id="武陵源景区（三天）好看"><a href="#武陵源景区（三天）好看" class="headerlink" title="武陵源景区（三天）好看"></a>武陵源景区（三天）好看</h1></li>
+</ol>
+</li>
+<li>张家界森林公园、杨家界自然保护区、天子山自然保护区，索溪峪自然保护区</li>
+<li>位置： 武陵车站旁</li>
+<li>费用：<ol>
+<li>门票：248元，</li>
+<li>索道67元/人，</li>
+<li>百龙天梯72元/人，</li>
+<li>十里画廊小火车52元/人</li>
+</ol>
+</li>
+<li>住：乌龙寨、老屋场、天子山、丁香榕<ol>
+<li>香榕村-米兰客栈</li>
+<li>日出：杨家界景区-丁香榕；天子山大观台景区</li>
+<li>日落：乌龙寨</li>
+</ol>
+</li>
+<li>景<ul>
+<li><strong>张家界国家森林公园</strong>(黄石寨游览线、金鞭溪游览线、袁家界游览线); 袁家界 - 世界自然遗产的核心</li>
+<li><strong>杨家界风景区</strong>(乌龙寨游览线、一步登天–空中走廊); - 最漂亮景区；悬浮山 - 看阿凡达原形</li>
+<li><strong>天子山风景区</strong>(大观台游览线、贺龙公园游览线);</li>
+<li><strong>索溪峪风景区</strong>(十里画廊游览线).</li>
+<li>老屋场 - 空中田园，神兵聚会    </li>
+</ul>
+</li>
+<li>路线<ol>
+<li>森林公园售票口进景区，从武陵源售票口出景区</li>
+<li>金鞭溪景区(世界上最美丽的峡谷) - 观音送子、猪八戒背媳妇、神鹰护鞭、劈山救母、西游记外景拍摄地、长寿泉、千里相会等景点</li>
+<li>水绕四门乘坐环保车至百龙电梯下站，然后乘坐世界户外第一电梯至山顶的袁家界</li>
+<li>袁家界景区(奇特壮观) - 电影《阿凡达》中“哈利路亚山”原型“乾坤柱”、天下第一桥、九天玄梯、乾坤柱、连心桥、中韩友谊亭、神龟问天、迷魂台等景点</li>
+<li>乘坐大约20分钟的环保车可到大观台住宿地休息</li>
+<li>去游玩未开发景区——老屋场风景区，观原生态的空中田园及神兵聚会绝景。</li>
+<li>杨家界景区(漂亮) - 金鸡报晓、乌龙寨、三道鬼门关、杨门女将、回音壁、情人峰、五指山、天波府、等景点</li>
+<li>天子山景区（“扩大的盆景，缩小的仙境”有峰林之王称号） - 仙女散花、御笔峰、天子阁、云青岩等景点</li>
+<li>贺龙公园 - 贺龙铜像</li>
+<li>十里画廊景区 - 三姐妹峰、采药老人、全家福、食指峰、驼骆峰等</li>
+<li>旅游巴士大约50分钟的车程返回市区<br><img src="http://i.imgur.com/bMqzws3.png" alt=""><h1 id="大峡谷"><a href="#大峡谷" class="headerlink" title="大峡谷"></a>大峡谷</h1></li>
+</ol>
+</li>
+<li>位置：距武陵源风景区15公里</li>
+<li>费用：<ol>
+<li>门票：121元/人</li>
+<li>玻璃桥138元</li>
+<li>电梯35元</li>
+</ol>
+</li>
+<li>景<ol>
+<li>玻璃桥<br><img src="http://i.imgur.com/2jQmvi4.jpg" alt=""><h1 id="黄龙洞-两小时"><a href="#黄龙洞-两小时" class="headerlink" title="黄龙洞 两小时"></a>黄龙洞 两小时</h1></li>
+</ol>
+</li>
+<li>费用：103元/人</li>
+<li>景：<ol>
+<li>天然溶洞钟乳石<h1 id="宝峰湖-两小时"><a href="#宝峰湖-两小时" class="headerlink" title="宝峰湖 两小时"></a>宝峰湖 两小时</h1></li>
+</ol>
+</li>
+<li>费用： 96元/人</li>
+<li>景：<ol>
+<li>“飞流直下三千尺”的宝峰飞瀑闻名<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1></li>
+</ol>
+</li>
+<li>吃<ol>
+<li>富正毅三下锅（武陵源车站后面）</li>
+<li>又一家的牛肉粉</li>
+</ol>
+</li>
+<li>住<ol>
+<li>鹏程</li>
+<li>南方明珠</li>
+</ol>
+</li>
+<li>行<ol>
+<li>长沙 - 火车站<img src="http://i.imgur.com/EkkSvCL.jpg" alt=""></li>
+<li>火车站 - 森林公园 12元/人,40—50min</li>
+<li>火车站 - 武陵源 12元/人,40—50min + 打车5元 - 标志门（门票站）| 1路公交 | 2路公交 - 标志门</li>
+<li>火车站 - 天子山 15元/人,90min<br><code>从汽车站到景区的BUS都是10分钟一班，只有到天子山门票站的是30分钟一班</code></li>
+</ol>
+</li>
+</ul>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-类&amp;方法" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="类-amp-方法"><a href="#类-amp-方法" class="headerlink" title="类 &amp; 方法"></a>类 &amp; 方法</h1><h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><h2 id="内部类"><a href="#内部类" class="headerlink" title="内部类"></a>内部类</h2><h2 id="类的访问权限"><a href="#类的访问权限" class="headerlink" title="类的访问权限"></a>类的访问权限</h2><h2 id="类与对象的区别"><a href="#类与对象的区别" class="headerlink" title="类与对象的区别"></a>类与对象的区别</h2><p>一、</p>
+<p>1.对象：是具体的事物。</p>
+<ol>
+<li><p>类：是对对象的抽象。</p>
+</li>
+<li><p>先有具体的对象，然后抽象各个对象之间象的部分，归纳出来类，通过类再认识其他对象。</p>
+</li>
+</ol>
+<p>二、对象和类的总结</p>
+<ol>
+<li><p>对象和类的关系：特殊到一般，具体到抽象。</p>
+</li>
+<li><p>对象是Java程序的核心。</p>
+</li>
+</ol>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-个人博客搭建" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="hexo-github-个人博客搭建"><a href="#hexo-github-个人博客搭建" class="headerlink" title="hexo + github 个人博客搭建"></a>hexo + github 个人博客搭建</h1><h2 id="前期准备（安装软件）"><a href="#前期准备（安装软件）" class="headerlink" title="前期准备（安装软件）"></a>前期准备（安装软件）</h2><h3 id="Node（必须）"><a href="#Node（必须）" class="headerlink" title="Node（必须）"></a>Node（必须）</h3><p>作用：用来生成静态页面的 到Node.js官网下载相应平台的最新版本，一路安装即可。</p>
+<h3 id="Git（必须）"><a href="#Git（必须）" class="headerlink" title="Git（必须）"></a>Git（必须）</h3><p>作用：把本地的hexo内容提交到github上去. 安装Xcode就自带有Git，我就不多说了。</p>
+<h3 id="申请GitHub（必须）"><a href="#申请GitHub（必须）" class="headerlink" title="申请GitHub（必须）"></a>申请GitHub（必须）</h3><p>作用：是用来做博客的远程创库、域名、服务器之类的，怎么与本地hexo建立连接等下讲。 github账号我也不再啰嗦了,没有的话直接申请就行了，跟一般的注册账号差不多，SSH Keys，看你自己了，可以不配制，不配置的话以后每次对自己的博客有改动提交的时候就要手动输入账号密码，配置了就不需要了，怎么配置我就不多说了，网上有很多教程。</p>
+<h3 id="正式安装HEXO"><a href="#正式安装HEXO" class="headerlink" title="正式安装HEXO"></a>正式安装HEXO</h3><p>Node和Git都安装好后，可执行如下命令安装hexo：</p>
+<pre><code>$ sudo npm install -g hexo
+</code></pre><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>创建一个文件夹，如：Blog，cd到Blog里执行hexo init的。命令：</p>
+<pre><code>hexo init
+</code></pre><p>好啦，至此，全部安装工作已经完成！</p>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-intelliJ快捷键" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="简输"><a href="#简输" class="headerlink" title="简输"></a>简输</h1><p>ctrl+J 查看更多  </p>
+<ul>
+<li><p>psvm  书写main方法   </p>
+<pre><code>public static void main(String[] args) {
+
+} 
+</code></pre></li>
+<li><p>fori 书写for循环</p>
+<pre><code>for (int i = 0; i &lt; ; i++) {
+
+}
+</code></pre></li>
+<li><p>sout 书写输出语句</p>
+<pre><code>System.out.println();
+</code></pre></li>
+</ul>
+<h1 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h1><ul>
+<li>Ctrl+R，替换文本</li>
+<li>Ctrl+F，查找文本</li>
+<li>Ctrl+Shift+U，大小写转化</li>
+<li>Ctrl+Alt+L，格式化代码、</li>
+<li>Ctrl+Shift + Enter，语句完成</li>
+<li>Ctrl+F4，关闭活动窗口</li>
+<li>Ctrl+N，可以快速打开类</li>
+<li>Ctrl+Shift+N，可以快速打开文件</li>
+<li>Alt+Insert，可以生成构造器/Getter/Setter等</li>
+<li>Ctrl+Alt+T，可以把代码包在一个块内，例如：try/catch</li>
+<li>Ctrl+Alt+I，将选中的代码进行自动缩进编排，这个功能在编辑 JSP 文件时也可以工作</li>
+<li>Ctrl+Shift+Space，自动补全代码</li>
+<li>Ctrl+Alt+O，优化导入的类和包</li>
+<li>Ctrl+空格，代码提示（与系统输入法快捷键冲突）</li>
+<li>Ctrl+Shift+Alt+N，查找类中的方法或变量</li>
+<li>Alt+Shift+Up/Down，上/下移一行</li>
+<li>Shift+F6，重构 – 重命名</li>
+<li>Ctrl+X，删除行</li>
+<li>Ctrl+Y，删除当前行</li>
+<li>Ctrl+D，复制行</li>
+<li>Ctrl+/或Ctrl+Shift+/，注释（//或者/**/）</li>
+<li>Ctrl+J，自动代码（例如：serr）</li>
+<li>Ctrl+Alt+left/right，返回至上次浏览的位置</li>
+<li>Alt+left/right，切换代码视图</li>
+<li>Alt+Up/Down，在方法间快速移动定位</li>
+<li>F2 或 Shift+F2，高亮错误或警告快速定位</li>
+<li>Ctrl+Shift+F7，高亮显示所有该文本，按 Esc 高亮消失</li>
+<li>Alt+F3，逐个往下查找相同文本，并高亮显示</li>
+<li>Ctrl+Up/Down，光标中转到第一行或最后一行下</li>
+<li>Ctrl+Shift+V，可以将最近使用的剪贴板内容选择插入到文本</li>
+<li>Ctrl+Alt+Shift+V，简单粘贴</li>
+<li>Alt+F7，查找整个工程中使用地某一个类、方法或者变量的位置</li>
+<li>Ctrl+O，重写方法</li>
+<li>Ctrl+I，实现方法</li>
+<li>Shift+Enter，向下插入新行</li>
+<li>Ctrl+F，查找/Shift+F3，向上查找/F3，向下查找</li>
+<li>Ctrl+Alt+S，打开设置对话框</li>
+<li>Ctrl+G，定位行</li>
+<li>Alt+Home，跳转到导航栏</li>
+<li>Ctrl+Enter，上插一行</li>
+<li>Ctrl+Backspace，按单词删除</li>
+<li>Ctrl+”+/-”，当前方法展开、折叠</li>
+<li>Ctrl+Shift+”+/-”，全部展开、折叠<h1 id="较常用快捷键"><a href="#较常用快捷键" class="headerlink" title="较常用快捷键"></a>较常用快捷键</h1></li>
+<li>Ctrl+E，最近的文件</li>
+<li>Ctrl+Shift+E，最近更改的文件</li>
+<li>Alt+Shift+C，最近的更改</li>
+<li>Ctrl+[ OR ]，可以跑到大括号的开头与结尾</li>
+<li>Ctrl+F12，可以显示当前文件的结构</li>
+<li>Ctrl+Shift+Insert，可以选择剪贴板内容并插入</li>
+<li>Ctrl+Alt+V，可以引入变量。例如：new String(); 自动导入变量定义</li>
+<li>Ctrl+Enter，导入包，自动修正</li>
+<li>Ctrl+B/Ctrl+Click，快速打开光标处的类或方法（跳转到定义处）</li>
+<li>Ctrl+Alt+B，跳转到方法实现处</li>
+<li>Ctrl+Shift+Backspace，跳转到上次编辑的地方</li>
+<li>Ctrl+Alt+Space，类名自动完成</li>
+<li>Ctrl+Alt+Up/Down，快速跳转搜索结果</li>
+<li>Ctrl+Shift+W，取消选择光标所在词</li>
+<li>Ctrl+Shift+F，全局查找</li>
+<li>Ctrl+Shift+S，高级搜索</li>
+<li>Ctrl+U，转到父类</li>
+<li>Alt+Shift+Inert，开启/关闭列选择模式</li>
+<li>Ctrl+Alt+Shift+S，打开当前项目/模块属性<h1 id="少用快捷键"><a href="#少用快捷键" class="headerlink" title="少用快捷键"></a>少用快捷键</h1></li>
+<li>Shift+Click，可以关闭文件</li>
+<li>Ctrl+F7，可以查询当前元素在当前文件中的引用，然后按 F3 可以选择</li>
+<li>Alt+Q，可以看到当前方法的声明</li>
+<li>Ctrl+P，可以显示参数信息</li>
+<li>Ctrl+Alt+J，用动态模板环绕</li>
+<li>Ctrl+H，显示类结构图（类的继承层次）</li>
+<li>Ctrl+Q，显示注释文档</li>
+<li>Alt+F1，查找代码所在位置</li>
+<li>Alt+1，快速打开或隐藏工程面板</li>
+<li>Ctrl+Shift+J，整合两行</li>
+<li>Alt+F8，计算变量值</li>
+<li>Shift+Esc，不仅可以把焦点移到编辑器上，而且还可以隐藏当前（或最后活动的）工具窗口</li>
+<li>F12，把焦点从编辑器移到最近使用的工具窗口</li>
+<li>Shift+F1，要打开编辑器光标字符处使用的类或者方法 Java 文档的浏览器</li>
+<li>Ctrl+W，可以选择单词继而语句继而行继而函数</li>
+</ul>
+<h1 id="调试部分、编译"><a href="#调试部分、编译" class="headerlink" title="调试部分、编译"></a>调试部分、编译</h1><ul>
+<li>Ctrl+F2，停止</li>
+<li>Alt+Shift+F9，选择 Debug</li>
+<li>Alt+Shift+F10，选择 Run</li>
+<li>Ctrl+Shift+F9，编译</li>
+<li>Ctrl+Shift+F10，运行</li>
+<li>Ctrl+Shift+F8，查看断点</li>
+<li>F8，步过</li>
+<li>F7，步入</li>
+<li>Shift+F7，智能步入</li>
+<li>Shift+F8，步出</li>
+<li>Alt+Shift+F8，强制步过</li>
+<li>Alt+Shift+F7，强制步入</li>
+<li>Alt+F9，运行至光标处</li>
+<li>Ctrl+Alt+F9，强制运行至光标处</li>
+<li>F9，恢复程序</li>
+<li>Alt+F10，定位到断点</li>
+<li>Ctrl+F8，切换行断点</li>
+<li>Ctrl+F9，生成项目</li>
+<li>Alt+1，项目</li>
+<li>Alt+2，收藏</li>
+<li>Alt+6，TODO</li>
+<li>Alt+7，结构</li>
+<li>Ctrl+Shift+C，复制路径</li>
+<li>Ctrl+Alt+Shift+C，复制引用，必须选择类名</li>
+<li>Ctrl+Alt+Y，同步</li>
+<li>Ctrl+~，快速切换方案（界面外观、代码风格、快捷键映射等菜单）</li>
+<li>Shift+F12，还原默认布局</li>
+<li>Ctrl+Shift+F12，隐藏/恢复所有窗口</li>
+<li>Ctrl+F4，关闭</li>
+<li>Ctrl+Shift+F4，关闭活动选项卡</li>
+<li>Ctrl+Tab，转到下一个拆分器</li>
+<li>Ctrl+Shift+Tab，转到上一个拆分器<h1 id="重构"><a href="#重构" class="headerlink" title="重构"></a>重构</h1></li>
+<li>Ctrl+Alt+Shift+T，弹出重构菜单</li>
+<li>Shift+F6，重命名</li>
+<li>F6，移动</li>
+<li>F5，复制</li>
+<li>Alt+Delete，安全删除</li>
+<li>Ctrl+Alt+N，内联<h1 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h1></li>
+<li>Ctrl+F，查找</li>
+<li>Ctrl+R，替换</li>
+<li>F3，查找下一个</li>
+<li>Shift+F3，查找上一个</li>
+<li>Ctrl+Shift+F，在路径中查找</li>
+<li>Ctrl+Shift+R，在路径中替换</li>
+<li>Ctrl+Shift+S，搜索结构</li>
+<li>Ctrl+Shift+M，替换结构</li>
+<li>Alt+F7，查找用法</li>
+<li>Ctrl+Alt+F7，显示用法</li>
+<li>Ctrl+F7，在文件中查找用法</li>
+<li>Ctrl+Shift+F7，在文件中高亮显示用法</li>
+</ul>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
 <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
 
    
@@ -103,6 +534,254 @@
 
 
   
+    
+<article id="post-技术铛" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+      <header class="article-header">
+        
+           
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/技术铛/">常见错误</a>
+    </h1>
+  
+
+        
+      </header>
+      
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>win8系统无线关闭。<br>=〉Fn+F3（有信号塔状的按钮）</li>
+<li>谷歌打开链接在新页面设置<br>=〉www.google.com，输入关键字，进入搜索页面；options-search setting-where results open</li>
+<li></li>
+</ol>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-技术铛" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+      <header class="article-header">
+        
+           
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/技术铛/">git配置</a>
+    </h1>
+  
+
+        
+      </header>
+      
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>跟着笔者魔鬼般的步伐，我们一起来瞅瞅一个团队协作的任务如何进行版本管理吧~</p>
+<p>要跟上哦~</p>
+<p>===============================================</p>
+<p>首先我们先来看下git进行版本管理的大概流程：</p>
+<p>好啦，心里大概有个底了吧，现在开始正式操作了哟~</p>
+<p>（一）前期准备</p>
+<p>1.申请一个github账号：</p>
+<p>　　访问<a href="https://github.com/，进入如图页面：" target="_blank" rel="external">https://github.com/，进入如图页面：</a></p>
+<p>注册一个属于自己的github账号。</p>
+<p>2.安装git：</p>
+<p>　　安装指南：<a href="http://note.youdao.com/share/?id=f0b3422cf19db7c0dcc31de16f2653cc&amp;type=note" target="_blank" rel="external">http://note.youdao.com/share/?id=f0b3422cf19db7c0dcc31de16f2653cc&amp;type=note</a></p>
+<p>3.安装开发工具IntelliJ IDEA（当然啦，可以根据自己的喜好安装不同的开发工具）:</p>
+<p>　　安装指南：<a href="http://note.youdao.com/share/?id=89349b4e4f6f57ae603c2c43bad1bb62&amp;type=note" target="_blank" rel="external">http://note.youdao.com/share/?id=89349b4e4f6f57ae603c2c43bad1bb62&amp;type=note</a></p>
+<p>4.github与本地电脑的关联 &amp;&amp; 本地gitbash配置全局用户名等信息：</p>
+<p>　-在安装好之后，电脑桌面会生成gitbash的快捷方式，我们将其打开，会进入到如下界面：</p>
+<p>　　-现在我们先在GitBash上将一些前期的准备工作做好。</p>
+<p>　　–首先，开启快速编辑模式（这样才可以右击鼠标粘贴，不开启的话粘贴功能不能用的哟）：在Git Bash任务栏右击，点击下拉菜单中“属性”按钮，出现如下界面，勾选 “快速编辑模式”：</p>
+<p>　设置好了，现在我们可以开始愉快的进行git操作了。</p>
+<p>　–先建立本地电脑与github的联系(为github账号加入SSH Key)：</p>
+<p>　　-&gt;创建SSH Key：</p>
+<p>　　首先到用户主目录（一般是C:\Users\admin）下，看看有没有.ssh文件夹。</p>
+<p>　　如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件；</p>
+<p>　　有的话，可直接跳到下一步；</p>
+<p>　　如果没有，打开Git Bash，在命令行输入以下命令，然后回车。</p>
+<p>$ ssh-keygen -t rsa -C “你注册github的邮箱”<br>　这时用户主目录下就会生成.ssh的文件夹，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人：<br>　　-&gt;给github账号配置SSH秘钥：</p>
+<p>　　登陆GitHub，打开“Account settings”，点击左侧“SSH Keys”按钮，再点击右侧“Add SSH Key”，在输入框中填一个自己中意的Title，在Key文本框里粘贴id_rsa.pub文件的内容：</p>
+<p>github-addkey-1    github-addkey-2</p>
+<p>　　–然后我们在本地配置全局的用户名等信息，这样进行git操作时，你的身份才是可以识别的：</p>
+<p>　　　-&gt;在Git Bash命令行中键入如下命令：</p>
+<p>1.git config user.name “用户名”<br>2.git config user.email “邮箱”<br>3.git config color.ui true //可选，设置Git Bash字体有颜色差异
+　　</p>
+<p>（二）操作</p>
+<p>　　1.本地已有代码</p>
+<p>　　-&gt;在Git Bash命令行用“cd”命令进入你存放代码的文件夹;</p>
+<p>　　-&gt;git init 命令初始化本地仓库。你的代码存放文件夹下会出现如图所示的”.git”文件夹。</p>
+<p>　　2.本地无代码，直接去远程库上克隆项目</p>
+<p>　　-访问团队项目远程仓库地址（此演示为当地址需访问别人项目得到的情况，如果有地址时，只需在登陆自己github账号的同时打开该地址）</p>
+<p>　　-&gt;登录你的github账号,在搜索框中输入你要查找的项目名或用户名。在跳转后的页面点击Code或Users，出现要搜索的结果后，点击进入。</p>
+<p>　　-&gt;在所访问用户的主页中找到你想要的项目。</p>
+<p>　　将项目fork一份到自己的github仓库中。如下图所示,fork之前，地址栏访问的是别人的github仓库;fork之后地址栏跳转到自己的github仓库地址，fork后面的数字会+1.这时就将项目文件拷贝了一份到自己的远程仓库。复制自己的远程仓库地址（如果github上没有绑定SSH秘钥，请复制https路径，不要复制SSH路径）。</p>
+<p>　　-将远程仓库的项目迁到本地仓库中（下面演示的是图形化界面，git命令见开头流程图）</p>
+<p>　　打开IDEA，在菜单栏找到“VCS”，下拉菜单中悬停“Chenckout from Version Control”,点击“GitHub”。如下图所示：</p>
+<p>　　会出现如下界面，输入你的github账号密码。</p>
+<p>　　然后在接下来的页面设置你的操作密码；在如下页面的Git Repository URL输入刚刚复制的项目地址（自己的远程仓库），点击clone。就可以将远程仓库的项目迁下来。</p>
+<p>-对项目进行修改<br>-将本地仓库修改后的代码迁移到远程仓库中<br>首先，为了方便团队协作，我们在本地checkout一个本地分支。<br>如图，在IDEA的右下角，我们选择新建一个分支。我新建了一个名为“develop”的分支，如下图所示：</p>
+<p>　接下来我们就在改分支编写代码啦。</p>
+<p>　修改完之后，我们就要将本地仓库的代码提交到远程服务器上面了。</p>
+<p>　如下图所示，在IDEA左侧项目名上面，我们点击万能的右键，选择“Git”子菜单中的“Commit Directory”；在弹出窗口中填写提交信息，然后点击“Commit and Push”；在接下来的弹出框中“Commit”“Push”。这是代码就提交到远程仓库的“develop”分支了。</p>
+<p>（三）远程</p>
+<p>　-在远程仓库中贡献代码</p>
+<p>　　进入你的github页面，会显示如下的提交信息。点击“Compare &amp; pull request”进行合并，切换到develop分支可以看到刚刚提交的代码了。</p>
+<p>　　-现在我们找到亮眼的“New pull request”按钮进行点击。会跳转如右下所示页面。左边选择你自己的分支，右边选你要与之对比合并的团队项目远程分支，确认就可以了。</p>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-技术铛" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+      <header class="article-header">
+        
+           
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/技术铛/">java 环境配置</a>
+    </h1>
+  
+
+        
+      </header>
+      
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>不管是编程还是用一些软件，都可能需要配置Java环境变量，今天我们一起来配置一下这个名为Java的环境变量吧。  </p>
+<h2 id="安装Java"><a href="#安装Java" class="headerlink" title="安装Java"></a>安装Java</h2><p>进入<a href="http://www.java.com/zh_CN/" target="_blank" rel="external">Java主页</a>，点击<code>免费Java下载</code>，并安装到C盘根目录下；  </p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>进入到<code>系统属性</code>界面，点击左侧边栏的<code>高级系统设置</code>，出现系统属性的弹出窗口。<br><img src="http://i.imgur.com/89KiIFG.png" alt="系统属性界面"><br><img src="http://i.imgur.com/WOSmGSY.png" alt="系统属性弹出窗口"><br>选择<code>环境变量</code>，在环境变量弹出窗口下边<code>系统变量</code>下拉框中,<br><img src="http://i.imgur.com/6xAdlWD.png" alt="环境变量弹出窗口"></p>
+<ul>
+<li>点击<code>新建</code>，变量名为“JAVA_HOME”，变量值复制安装的java路径，本人此次安装路几个为<code>C:\java\bin</code>;</li>
+<li>选择Path，双击，在弹出框口中输入<code>%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</code></li>
+<li>新建一个名为<code>CLASSPATH</code>的系统变量，变量值为<code>.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;</code>  <h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2>现在Java配置配好了，如何验证Java是否配置成功呢？  </li>
+<li>到<code>开始</code>菜单中输入<code>cmd</code>命令，将会出来dos命令窗口；</li>
+<li>输入<code>JAVAC</code>或者    <code>java -version</code>，出现帮助信息或者版本系你想则证明Java配置成功。</li>
+</ul>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+    
+<article id="post-技术铛" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+      <header class="article-header">
+        
+           
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/技术铛/">电脑重装</a>
+    </h1>
+  
+
+        
+      </header>
+      
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>重装电脑可谓是技术宅们泡妞的必备法宝啊，其实重装系统很简单的，今天我们就来简单快速地get这个技能。  </p>
+<p>本人用过多种方法重装系统，最简单的莫过于Ghost镜像重装了，不仅快速易学，更省去了重装后电脑一片空白什么软件都要重装的繁琐。但本人素来不喜Ghost带的一些我并不想要的软件，每次重装只喜欢一个素净的原生态系统。此次就着重介绍如何安装本人最爱的一个系统。   </p>
+<p><strong>下载链接：</strong>  </p>
+<ul>
+<li><a href="http://www.pccppc.com/xiaomape2015-html" target="_blank" rel="external">小马PE</a> 制作U盘启动盘  </li>
+<li><a href="http://itellyou.cn/" target="_blank" rel="external">I tell you</a> 原生系统  </li>
+<li><a href="http://www.pccppc.com/" target="_blank" rel="external">小马激活最新绿色版</a> 系统激活</li>
+</ul>
+<h2 id="制作U盘启动盘"><a href="#制作U盘启动盘" class="headerlink" title="制作U盘启动盘"></a>制作U盘启动盘</h2><p>进入<a href="http://www.pccppc.com/xiaomape2015-html" target="_blank" rel="external">小马PE</a>下载页，下载小马PE到U盘(<em>注意：</em>请备份好U盘资料，此操作会使U盘格式化，所有资料即将丢失)。</p>
+<h2 id="原生Windows系统-iso文件放置到U盘根目录"><a href="#原生Windows系统-iso文件放置到U盘根目录" class="headerlink" title="原生Windows系统.iso文件放置到U盘根目录"></a>原生Windows系统.iso文件放置到U盘根目录</h2><p>进入<a href="http://itellyou.cn/" target="_blank" rel="external">I tell you</a>主页，在做侧边栏找到<code>操作系统</code>，选择Windows8。<br>在右边tab页选择<code>中文-简体</code>，再选择<code>Windows 8 (x64) - DVD (Chinese-Simplified)</code>，点击<code>详细信息</code>，复制“ed2k:”开头的地址，在浏览器中打开(<em>注意：</em>该网址需要有相应的下载软件，可使用迅雷下载)。<br>将下载的.iso原生系统文件复制到U盘根目录下。<br><img src="http://i.imgur.com/m0A5K3s.png" alt="I tell you官网界面"></p>
+<h2 id="从U盘启动电脑"><a href="#从U盘启动电脑" class="headerlink" title="从U盘启动电脑"></a>从U盘启动电脑</h2><p>插上U盘，重启电脑，并设置从U盘启动(一般是按<code>Esc</code>或者<code>F12</code>或者<code>F10</code>，具体电脑请自行问度娘)。  </p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>进入小马PE的主界面，如果是希望数据得到一个全新的不带过去数据的新系统，请选择<code>急速分区</code>进行分区或者格式化存储盘。如需保留原有数据，请直接进入下一步。<br>点击<code>小马PE原版系统急速安装</code>，并将U盘中的.iso文件拖入弹出窗口中，进行安装。<br>显示安装成功之后，弹出U盘，并重启电脑。</p>
+<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>下载<a href="http://www.pccppc.com/" target="_blank" rel="external">小马激活最新绿色版</a>，点击激活。</p>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
+    </nav>
   
 
 </div>

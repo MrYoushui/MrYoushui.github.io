@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#00796b">
+  <meta name="msapplication-TileColor" content="#4E8071"/>
+  
+  
+  <link rel="alternative" href="http://your-feed-url" title="Hexo" type="application/atom+xml">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+</head>
+
+
+<body>
+
+  <div id="container" class="container">
+    <div class="left-col">
+    <div class="intrude-less">
+  <header id="header" class="inner">
+    <a href="/" class="profilepic">
+      <img src="http://i.imgur.com/FyKIxPP.jpg" class="block-select js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+	</a>
+	
+    <nav class="header-menu">
+      <ul>
+        <li><a href="/archives">文章</a></li><li><a href="/categories">随笔</a></li><li><a href="/tags">标签</a></li><li><a href="/feedback">留言</a></li>
+      </ul>
+    </nav>
+  </header>				
+</div>
+
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  <div class="intrude-less">
+    <header id="header" class="inner">
+      <a href="/" class="profilepic">
+        <img src="http://i.imgur.com/FyKIxPP.jpg" class="block-select js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+	  </a>
+	  
+	  <nav class="header-menu">
+	    <ul>
+        <li><a href="/archives">文章</a></li><li><a href="/categories">随笔</a></li><li><a href="/tags">标签</a></li><li><a href="/feedback">留言</a></li><div class="clearfix"></div>
+		</ul>
+	  </nav>
+	</header>				
+  </div>
+</nav>
+
+      <div class="body-wrap">
+<article id="post-重载和重写" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+    <div class="article-meta">
+      
+<div class="article-date">
+<span class="datetime-published-tag"> 2017-04-09 </span>
+</div>
+
+
+    </div>
+    
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="重载"><a href="#重载" class="headerlink" title="重载"></a>重载</h1><p><strong>定义</strong>同名不同参  </p>
+<ol>
+<li>方法名相同  </li>
+<li>参数不同（个数、顺序、类型）<br><strong>注</strong> 参数名 &amp; 返回值 与重载无关<br><strong>例</strong> <code>System.out.println();</code> <code>构造方法与实例方法</code><br><img src="http://i.imgur.com/SALla8Y.png" alt=""></li>
+</ol>
+<h2 id="返回值不同是否为重载？否"><a href="#返回值不同是否为重载？否" class="headerlink" title="返回值不同是否为重载？否"></a>返回值不同是否为重载？否</h2><ol>
+<li><strong>同名同参不同返回值</strong> 程序会报错<br><img src="http://i.imgur.com/3PpZx79.png" alt="同名同参报错"></li>
+<li><strong>同名不同参不同返回值</strong> 参数不同即为重载<br><img src="http://i.imgur.com/2QfgB4w.png" alt=""></li>
+</ol>
+<h2 id="自动售货机例子"><a href="#自动售货机例子" class="headerlink" title="自动售货机例子"></a>自动售货机例子</h2><ol>
+<li>新建一个自动收货机对象，有售卖的方法，有纸币和硬币两种类型。收钱方式有先收硬币，再收纸币；先收硬币，再收纸币，再收硬币。<br><img src="http://i.imgur.com/rUHxUvu.png" alt=""></li>
+<li>进行买操作。出口只有一个。<br><img src="http://i.imgur.com/DsKdiYG.png" alt=""></li>
+</ol>
+<h1 id="重写"><a href="#重写" class="headerlink" title="重写"></a>重写</h1><p><strong>定义</strong>同名同参同返回值  </p>
+<ol>
+<li>方法名相同  </li>
+<li>参数相同（个数、顺序、类型）  </li>
+<li><p>返回值相同<br><strong>注</strong> 子类重写父类<br>注意:   </p>
+<pre><code> (1)子类中不能重写父类中的final方法 (只能重写非私有方法)  
+ (2)子类中必须重写父类中的abstract方法   
+（3）访问修饰符的限制一定要大于被重写方法的访问修饰符（public&gt;protected&gt;default&gt;private）  
+（4）重写方法一定不能抛出新的检查异常或者比被重写方法申明更加宽泛的检查型异常   
+</code></pre><p>如：<br>父类的一个方法申明了一个检查异常IOException，在重写这个方法是就不能抛出Exception,只能抛出IOException的子类异常，可以抛出非检查异常。<br><strong>例</strong> </p>
+<p> @Override<br> public String toString() {</p>
+<pre><code>return super.toString();
+</code></pre><p> }<br>不覆盖toString方法的话，继承自Object类的toString方法格式 是  包名.类名@xxxx   </p>
+</li>
+</ol>
+
+      
+      
+      
+        <div class="post-copyright">
+<p><a href="http://yoursite.com/2017/04/09/重载和重写/">本文</a>为原创，转载请遵守本站<a href="/copyright/">版权声明</a></p>
+<p class="updated-time" >更新于: </span>2017年3月29日 17:03</p>
+</div>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav" class="block-select">
+  
+    <a href="/2017/04/09/张家界攻略/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+
+  
+</article>
+
+
+
+
+
+</div>
+      <footer id="footer" class="block-select">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">&copy; 2015-2017
+        <a href="/aboutme/" class ="aboutme-foot-tag"> John Doe</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script>
+	var ThemeXConfig = {fancybox: false,mathjax: false,animate: false,isHome: false,isPost: true,isArchive: false,isTag: false,isCategory: false,open_in_new: false, CDN_PATH: '' }
+</script>
+
+
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/base.js"></script>
+    <script src="/js/jquery.lazyload.min.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#00796b">
+  <meta name="msapplication-TileColor" content="#4E8071"/>
+  
+  
+  <link rel="alternative" href="http://your-feed-url" title="Hexo" type="application/atom+xml">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css"> 
+</head>
+
+
+<body>
+
+  <div id="container" class="container">
+    <div class="left-col">
+    <div class="intrude-less">
+  <header id="header" class="inner">
+    <a href="/" class="profilepic">
+      <img src="http://i.imgur.com/FyKIxPP.jpg" class="block-select js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+	</a>
+	
+    <nav class="header-menu">
+      <ul>
+        <li><a href="/archives">文章</a></li><li><a href="/categories">随笔</a></li><li><a href="/tags">标签</a></li><li><a href="/feedback">留言</a></li>
+      </ul>
+    </nav>
+  </header>				
+</div>
+
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  <div class="intrude-less">
+    <header id="header" class="inner">
+      <a href="/" class="profilepic">
+        <img src="http://i.imgur.com/FyKIxPP.jpg" class="block-select js-avatar" style="width: 100%;height: 100%;opacity: 1;">
+	  </a>
+	  
+	  <nav class="header-menu">
+	    <ul>
+        <li><a href="/archives">文章</a></li><li><a href="/categories">随笔</a></li><li><a href="/tags">标签</a></li><li><a href="/feedback">留言</a></li><div class="clearfix"></div>
+		</ul>
+	  </nav>
+	</header>				
+  </div>
+</nav>
+
+      <div class="body-wrap">
+  
+    
+<article id="post-技术铛" class="article article-type-post" itemscope itemprop="blogPost">
+
+   
+    
+  
+  <div class="article-inner block-select">
+  
+    
+    
+      <header class="article-header">
+        
+           
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/06/28/技术铛/">PLSql中文乱码解决方案</a>
+    </h1>
+  
+
+        
+      </header>
+      
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="（一）原因"><a href="#（一）原因" class="headerlink" title="（一）原因"></a>（一）原因</h2><p>Oracle服务器编码与plsql编码不一致</p>
+<h2 id="（二）解决方案"><a href="#（二）解决方案" class="headerlink" title="（二）解决方案"></a>（二）解决方案</h2><ol>
+<li>取得服务端编码格式<ul>
+<li>select userenv(‘language’) from dual;<br>假设结果为AMERICAN_AMERICA.ZHS16GBK</li>
+</ul>
+</li>
+<li>设置本地环境变量（PLSQL优先从环境变量中获取属性）<ul>
+<li>右击 我的电脑 -&gt; 系统属性 -&gt; 高级系统设置 -&gt; 环境变量 -&gt; 系统变量栏<ul>
+<li>新增：<br>变量名：’NLS<em> CHARACTERSET’ 变量值：’ZHS16GBK’<br>变量名：’NLS</em> LANG’  变量值： ‘AMERICAN_AMERICA.ZHS16GBK’</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>重启PLSQL，再次查询原来乱码的数据，完美展示</li>
+</ol>
+
+      
+      
+      
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
+
+</div>
+      <footer id="footer" class="block-select">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">&copy; 2015-2017
+        <a href="/aboutme/" class ="aboutme-foot-tag"> John Doe</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script>
+	var ThemeXConfig = {fancybox: false,mathjax: false,animate: false,isHome: true,isPost: false,isArchive: false,isTag: false,isCategory: false,open_in_new: false, CDN_PATH: '' }
+</script>
+
+
+    <script src="/js/jquery-1.9.1.min.js"></script>
+    <script src="/js/base.js"></script>
+    <script src="/js/jquery.lazyload.min.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
