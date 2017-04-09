@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>git配置</title>
+  <title>电脑重装</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#00796b">
   <meta name="msapplication-TileColor" content="#4E8071"/>
@@ -76,7 +76,7 @@
            
   
     <h1 class="article-title" itemprop="name">
-      git配置
+      电脑重装
     </h1>
   
 
@@ -86,7 +86,7 @@
       <div class="article-info article-info-post">
         
 	<div class="article-tag tagcloud block-select">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/github/">github</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/版本管理/">版本管理</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/windows/">windows</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/系统/">系统</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/重装/">重装</a></li></ul>
 	</div>
 
 
@@ -99,58 +99,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>跟着笔者魔鬼般的步伐，我们一起来瞅瞅一个团队协作的任务如何进行版本管理吧~</p>
-<p>要跟上哦~</p>
-<p>===============================================</p>
-<p>首先我们先来看下git进行版本管理的大概流程：</p>
-<p>好啦，心里大概有个底了吧，现在开始正式操作了哟~</p>
-<p>（一）前期准备</p>
-<p>1.申请一个github账号：</p>
-<p>　　访问<a href="https://github.com/，进入如图页面：" target="_blank" rel="external">https://github.com/，进入如图页面：</a></p>
-<p>注册一个属于自己的github账号。</p>
-<p>2.安装git：</p>
-<p>　　安装指南：<a href="http://note.youdao.com/share/?id=f0b3422cf19db7c0dcc31de16f2653cc&amp;type=note" target="_blank" rel="external">http://note.youdao.com/share/?id=f0b3422cf19db7c0dcc31de16f2653cc&amp;type=note</a></p>
-<p>3.安装开发工具IntelliJ IDEA（当然啦，可以根据自己的喜好安装不同的开发工具）:</p>
-<p>　　安装指南：<a href="http://note.youdao.com/share/?id=89349b4e4f6f57ae603c2c43bad1bb62&amp;type=note" target="_blank" rel="external">http://note.youdao.com/share/?id=89349b4e4f6f57ae603c2c43bad1bb62&amp;type=note</a></p>
-<p>4.github与本地电脑的关联 &amp;&amp; 本地gitbash配置全局用户名等信息：</p>
-<p>　-在安装好之后，电脑桌面会生成gitbash的快捷方式，我们将其打开，会进入到如下界面：</p>
-<p>　　-现在我们先在GitBash上将一些前期的准备工作做好。</p>
-<p>　　–首先，开启快速编辑模式（这样才可以右击鼠标粘贴，不开启的话粘贴功能不能用的哟）：在Git Bash任务栏右击，点击下拉菜单中“属性”按钮，出现如下界面，勾选 “快速编辑模式”：</p>
-<p>　设置好了，现在我们可以开始愉快的进行git操作了。</p>
-<p>　–先建立本地电脑与github的联系(为github账号加入SSH Key)：</p>
-<p>　　-&gt;创建SSH Key：</p>
-<p>　　首先到用户主目录（一般是C:\Users\admin）下，看看有没有.ssh文件夹。</p>
-<p>　　如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件；</p>
-<p>　　有的话，可直接跳到下一步；</p>
-<p>　　如果没有，打开Git Bash，在命令行输入以下命令，然后回车。</p>
-<p>$ ssh-keygen -t rsa -C “你注册github的邮箱”<br>　这时用户主目录下就会生成.ssh的文件夹，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人：<br>　　-&gt;给github账号配置SSH秘钥：</p>
-<p>　　登陆GitHub，打开“Account settings”，点击左侧“SSH Keys”按钮，再点击右侧“Add SSH Key”，在输入框中填一个自己中意的Title，在Key文本框里粘贴id_rsa.pub文件的内容：</p>
-<p>github-addkey-1    github-addkey-2</p>
-<p>　　–然后我们在本地配置全局的用户名等信息，这样进行git操作时，你的身份才是可以识别的：</p>
-<p>　　　-&gt;在Git Bash命令行中键入如下命令：</p>
-<p>1.git config user.name “用户名”<br>2.git config user.email “邮箱”<br>3.git config color.ui true //可选，设置Git Bash字体有颜色差异
-　　</p>
-<p>（二）操作</p>
-<p>　　1.本地已有代码</p>
-<p>　　-&gt;在Git Bash命令行用“cd”命令进入你存放代码的文件夹;</p>
-<p>　　-&gt;git init 命令初始化本地仓库。你的代码存放文件夹下会出现如图所示的”.git”文件夹。</p>
-<p>　　2.本地无代码，直接去远程库上克隆项目</p>
-<p>　　-访问团队项目远程仓库地址（此演示为当地址需访问别人项目得到的情况，如果有地址时，只需在登陆自己github账号的同时打开该地址）</p>
-<p>　　-&gt;登录你的github账号,在搜索框中输入你要查找的项目名或用户名。在跳转后的页面点击Code或Users，出现要搜索的结果后，点击进入。</p>
-<p>　　-&gt;在所访问用户的主页中找到你想要的项目。</p>
-<p>　　将项目fork一份到自己的github仓库中。如下图所示,fork之前，地址栏访问的是别人的github仓库;fork之后地址栏跳转到自己的github仓库地址，fork后面的数字会+1.这时就将项目文件拷贝了一份到自己的远程仓库。复制自己的远程仓库地址（如果github上没有绑定SSH秘钥，请复制https路径，不要复制SSH路径）。</p>
-<p>　　-将远程仓库的项目迁到本地仓库中（下面演示的是图形化界面，git命令见开头流程图）</p>
-<p>　　打开IDEA，在菜单栏找到“VCS”，下拉菜单中悬停“Chenckout from Version Control”,点击“GitHub”。如下图所示：</p>
-<p>　　会出现如下界面，输入你的github账号密码。</p>
-<p>　　然后在接下来的页面设置你的操作密码；在如下页面的Git Repository URL输入刚刚复制的项目地址（自己的远程仓库），点击clone。就可以将远程仓库的项目迁下来。</p>
-<p>-对项目进行修改<br>-将本地仓库修改后的代码迁移到远程仓库中<br>首先，为了方便团队协作，我们在本地checkout一个本地分支。<br>如图，在IDEA的右下角，我们选择新建一个分支。我新建了一个名为“develop”的分支，如下图所示：</p>
-<p>　接下来我们就在改分支编写代码啦。</p>
-<p>　修改完之后，我们就要将本地仓库的代码提交到远程服务器上面了。</p>
-<p>　如下图所示，在IDEA左侧项目名上面，我们点击万能的右键，选择“Git”子菜单中的“Commit Directory”；在弹出窗口中填写提交信息，然后点击“Commit and Push”；在接下来的弹出框中“Commit”“Push”。这是代码就提交到远程仓库的“develop”分支了。</p>
-<p>（三）远程</p>
-<p>　-在远程仓库中贡献代码</p>
-<p>　　进入你的github页面，会显示如下的提交信息。点击“Compare &amp; pull request”进行合并，切换到develop分支可以看到刚刚提交的代码了。</p>
-<p>　　-现在我们找到亮眼的“New pull request”按钮进行点击。会跳转如右下所示页面。左边选择你自己的分支，右边选你要与之对比合并的团队项目远程分支，确认就可以了。</p>
+        <p>重装电脑可谓是技术宅们泡妞的必备法宝啊，其实重装系统很简单的，今天我们就来简单快速地get这个技能。  </p>
+<p>本人用过多种方法重装系统，最简单的莫过于Ghost镜像重装了，不仅快速易学，更省去了重装后电脑一片空白什么软件都要重装的繁琐。但本人素来不喜Ghost带的一些我并不想要的软件，每次重装只喜欢一个素净的原生态系统。此次就着重介绍如何安装本人最爱的一个系统。   </p>
+<p><strong>下载链接：</strong>  </p>
+<ul>
+<li><a href="http://www.pccppc.com/xiaomape2015-html" target="_blank" rel="external">小马PE</a> 制作U盘启动盘  </li>
+<li><a href="http://itellyou.cn/" target="_blank" rel="external">I tell you</a> 原生系统  </li>
+<li><a href="http://www.pccppc.com/" target="_blank" rel="external">小马激活最新绿色版</a> 系统激活</li>
+</ul>
+<h2 id="制作U盘启动盘"><a href="#制作U盘启动盘" class="headerlink" title="制作U盘启动盘"></a>制作U盘启动盘</h2><p>进入<a href="http://www.pccppc.com/xiaomape2015-html" target="_blank" rel="external">小马PE</a>下载页，下载小马PE到U盘(<em>注意：</em>请备份好U盘资料，此操作会使U盘格式化，所有资料即将丢失)。</p>
+<h2 id="原生Windows系统-iso文件放置到U盘根目录"><a href="#原生Windows系统-iso文件放置到U盘根目录" class="headerlink" title="原生Windows系统.iso文件放置到U盘根目录"></a>原生Windows系统.iso文件放置到U盘根目录</h2><p>进入<a href="http://itellyou.cn/" target="_blank" rel="external">I tell you</a>主页，在做侧边栏找到<code>操作系统</code>，选择Windows8。<br>在右边tab页选择<code>中文-简体</code>，再选择<code>Windows 8 (x64) - DVD (Chinese-Simplified)</code>，点击<code>详细信息</code>，复制“ed2k:”开头的地址，在浏览器中打开(<em>注意：</em>该网址需要有相应的下载软件，可使用迅雷下载)。<br>将下载的.iso原生系统文件复制到U盘根目录下。<br><img src="http://i.imgur.com/m0A5K3s.png" alt="I tell you官网界面"></p>
+<h2 id="从U盘启动电脑"><a href="#从U盘启动电脑" class="headerlink" title="从U盘启动电脑"></a>从U盘启动电脑</h2><p>插上U盘，重启电脑，并设置从U盘启动(一般是按<code>Esc</code>或者<code>F12</code>或者<code>F10</code>，具体电脑请自行问度娘)。  </p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>进入小马PE的主界面，如果是希望数据得到一个全新的不带过去数据的新系统，请选择<code>急速分区</code>进行分区或者格式化存储盘。如需保留原有数据，请直接进入下一步。<br>点击<code>小马PE原版系统急速安装</code>，并将U盘中的.iso文件拖入弹出窗口中，进行安装。<br>显示安装成功之后，弹出U盘，并重启电脑。</p>
+<h2 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h2><p>下载<a href="http://www.pccppc.com/" target="_blank" rel="external">小马激活最新绿色版</a>，点击激活。</p>
 
       
       
@@ -178,8 +139,8 @@
     </a>
   
   
-    <a href="/2017/04/09/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2017/02/28/技术铛/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">intellJ快捷键</div>
       <strong class="article-nav-caption">&gt;</strong>
     </a>
   
